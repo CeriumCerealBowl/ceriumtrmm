@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Cereal Download Page</title>
-	<meta name="description" content="Stuff that I share">
-    <link rel="stylesheet" href="./assets/bootstrap-dark-mode.min.css">
-    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/dl-apple-touch-icon-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/dl-192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRMM</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #000000;
+            color: #414142;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            height: 100%;
+        }
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #414142;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #414142;
+        }
+        .text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #414142;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="topbar">
-        <div class="fill">
-            <div class="container">
-                <a class="brand" href="https://www.ceriumnetworks.win/">Main Site</a>
-            </div>
-        </div>
-    </div>
     <div class="container">
-        <div class="hero-unit">
-            <h1>Download Page of Cerium</h1>
-            <p>Google Drive is the cloud provider (I'm cheap asf for a cdn)</p>
-			<p>Theres nothing in here by the way<p>
-            <p>M'kay Bye!</p>
+        <div class="button-container">
+            <button onclick="redirect()">Download</button>
+            <div class="text">WARNING! You are about to download an Unwanted Software!</div>
+              <div class="text">CeriumNetworks Actively Monitors this Software.</div>
+                <div class="text">YOU'VE BEEN WARNED</div>
         </div>
     </div>
+    <script>
+        function redirect() {
+            window.location.href = "https://api.ceriumnetworks.win/clients/a94e3d60-9b3c-4b38-9b80-e7e7d5dea671/deploy/";
+        }
+    </script>
 </body>
-
 </html>
